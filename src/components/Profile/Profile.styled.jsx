@@ -25,9 +25,10 @@ font-weight: bold;
 `;
 
 export const ProfileTag = styled.p`
-
+font-style: italic;
+color: grey;
 `;
 
 export const ProfileLocation = styled.p`
-
+color: grey;
 `;
