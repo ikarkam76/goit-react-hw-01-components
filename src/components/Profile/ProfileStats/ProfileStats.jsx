@@ -16,10 +16,11 @@ export const ProfileStats = ({stats}) => {
                     <StatsQuantity>{stats.likes}</StatsQuantity>
                 </StatsItem>
             </StatsList>
+            
 };
 
 ProfileStats.propTypes = {
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
 };

@@ -1,12 +1,14 @@
 import { ProfileCard } from "components/Profile/Profile";
 import profile from "components/path/user";
+import { Container } from "components/AppContainer/App.styled";
+
 
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <ProfileCard user={profile} />
-    </div>
+    </Container>
   );
 };
 
