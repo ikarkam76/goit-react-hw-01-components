@@ -20,7 +20,10 @@ export const ProfileStats = ({stats}) => {
 };
 
 ProfileStats.propTypes = {
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
+    stats: PropTypes.exact({
+            followers: PropTypes.number.isRequired,
+            views: PropTypes.number.isRequired,
+            likes: PropTypes.number.isRequired,
+        }),   
+   
 };
