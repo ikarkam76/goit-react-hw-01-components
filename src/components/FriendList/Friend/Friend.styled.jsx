@@ -22,6 +22,7 @@ background-color: ${props => {
 `;
 
 export const FriendAvatar = styled.img`
+width: 48px; 
 margin-left: 10px;
 border-radius: 10px;
 box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);

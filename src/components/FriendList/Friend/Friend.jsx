@@ -6,7 +6,7 @@ import { FriendAvatar, FriendCard, FriendName, FriendStatus } from 'components/F
 export const Friend = ({status, avatar, name}) => {
     return <FriendCard>
       <FriendStatus isOnline={status} />
-      <FriendAvatar src={avatar} alt="User avatar" width="48" />
+      <FriendAvatar src={avatar} alt="User avatar" />
       <FriendName>{name}</FriendName>
   </FriendCard>
 }
