@@ -8,11 +8,9 @@ import { Statistics } from "components/Statistics/Statistics";
 
 
 export const App = () => {
-  return (
-    <Container>
+  return <Container>
       <ProfileCard user={profile} />
       <Statistics title="Upload stats" stats={data} />
     </Container>
-  );
 };
 
