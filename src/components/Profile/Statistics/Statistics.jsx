@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatEvent } from './StatEvent/StatEvent';
-import { StatisticSection, StatisticsList } from 'components/Statistics/Statistics.styled';
+import { StatisticSection, StatisticsList } from 'components/Profile/Statistics/Statistics.styled';
 
 
 

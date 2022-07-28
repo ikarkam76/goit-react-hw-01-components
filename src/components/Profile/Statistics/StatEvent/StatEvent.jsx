@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StatEventItem, StatisticsLabel, StatisticsPercentage } from 'components/Statistics/StatEvent/StatEvent.styled';
+import { StatEventItem, StatisticsLabel, StatisticsPercentage } from 'components/Profile/Statistics/StatEvent/StatEvent.styled';
 
 export const StatEvent = ({ label, percentage }) => {
     return <StatEventItem>
