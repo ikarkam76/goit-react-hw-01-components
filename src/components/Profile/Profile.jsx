@@ -16,7 +16,7 @@ export const ProfileCard = ({username, tag, avatar, location, stats, statistics}
             <ProfileTag>@{tag}</ProfileTag>
             <ProfileLocation>{location}</ProfileLocation>
         </ProfileDescription>
-        <ProfileStats stats={stats} />
+        <ProfileStats followers={stats.followers} views={stats.views} likes={stats.likes}/>
         <Statistics title="Upload stats" stats={statistics} />
     </Profile>;
 };
