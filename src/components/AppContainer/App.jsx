@@ -1,4 +1,4 @@
-import profile from "components/path/user";
+import user from "components/path/user";
 import data from 'components/path/data';
 import friendList from 'components/path/friends';
 import transactions from 'components/path/transactions';
@@ -12,10 +12,15 @@ import { Transactions } from "components/TransactionHistory/TransactionHistory";
 
 export const App = () => {
   return <Container>
-    <ProfileCard user={profile} statistics={data} />
+    <ProfileCard
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+      statistics={data} />
     <FriendList friends={friendList} />
     <Transactions items={transactions} />
     </Container>
 };
 
-// friends={friendList}

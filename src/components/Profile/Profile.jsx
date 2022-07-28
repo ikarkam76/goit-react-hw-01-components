@@ -4,32 +4,30 @@ import { ProfileStats } from './ProfileStats/ProfileStats';
 import { Profile, ProfileDescription, ProfileImg, ProfileName, ProfileTag, ProfileLocation } from './Profile.styled';
 import { Statistics } from 'components/Profile/Statistics/Statistics';
 
-export const ProfileCard = ({user, statistics}) => {
+export const ProfileCard = ({username, tag, avatar, location, stats, statistics}) => {
     return <Profile>
         <ProfileDescription>
             <ProfileImg
-                src={user.avatar}
+                src={avatar}
                 alt="User avatar"
                 className="avatar"
             />
-            <ProfileName>{user.username}</ProfileName>
-            <ProfileTag>@{user.tag}</ProfileTag>
-            <ProfileLocation>{user.location}</ProfileLocation>
+            <ProfileName>{username}</ProfileName>
+            <ProfileTag>@{tag}</ProfileTag>
+            <ProfileLocation>{location}</ProfileLocation>
         </ProfileDescription>
-        <ProfileStats stats={user.stats} />
+        <ProfileStats stats={stats} />
         <Statistics title="Upload stats" stats={statistics} />
     </Profile>;
 };
 
 
 ProfileCard.propTypes = {
-    user: PropTypes.exact({
-        username: PropTypes.string.isRequired,
-        tag: PropTypes.string.isRequired,
-        location: PropTypes.string.isRequired,
-        avatar: PropTypes.string.isRequired,
-        stats: PropTypes.object.isRequired,
-    }),
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired,
     statistics: PropTypes.array.isRequired,
 
 };
