@@ -9,6 +9,11 @@ border: 1px solid black;
 box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
 margin-top: 10px;
 border-radius: 5px;
+&:hover, 
+&:focus {
+    transform: scale(1.02);
+    cursor: pointer;
+}
 `;
 
 export const FriendStatus = styled.span`
