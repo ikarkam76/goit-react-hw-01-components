@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types';
+import { StatEvent } from './StatEvent/StatEvent';
+import { StatisticSection, StatisticsList } from 'components/Statistics/Statistics.styled';
 
-export const Statistics = (title, data) => {
-    return <section class="statistics">
-        <h2 class="title">{title}</h2>
 
-        <ul class="stat-list">
-            data.map(el =>
-            <li class="item" key={el.id}>
-                <span class="label">{el.label}</span>
-                <span class="percentage">{el.percentage}</span>
-            </li>)
-        </ul>
-    </section>
+
+export const Statistics = ({ title, stats }) => {
+    return <StatisticSection>
+        <h2 className="title">{title}</h2>
+        <StatisticsList>
+            {stats.map(stat =>
+                <StatEvent key={stat.id} label={stat.label} percentage={stat.percentage} />)}
+        </StatisticsList>
+        </StatisticSection>
+    
 };
+
+
 

@@ -20,7 +20,7 @@ box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
 `;
 
 export const ProfileName = styled.p`
-font-size: 20px;
+font-size: 24px;
 font-weight: bold;
 `;
 
