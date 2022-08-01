@@ -1,10 +1,13 @@
 import styled from '@emotion/styled'
 
 export const Profile = styled.div`
-width: 300px;
-background-color: #ebe8e8;
-border: 1px solid black;
-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+  display: grid;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ebe8e8;
+  border: 1px solid black;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
 `;
 
 export const ProfileDescription = styled.div`

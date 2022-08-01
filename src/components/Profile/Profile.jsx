@@ -2,23 +2,21 @@ import PropTypes from 'prop-types';
 
 import { ProfileStats } from './ProfileStats/ProfileStats';
 import { Profile, ProfileDescription, ProfileImg, ProfileName, ProfileTag, ProfileLocation } from './Profile.styled';
-import { Statistics } from 'components/Profile/Statistics/Statistics';
 
-export const ProfileCard = ({username, tag, avatar, location, stats, statistics}) => {
+export const ProfileCard = ({username, tag, avatar, location, stats}) => {
     return <Profile>
-        <ProfileDescription>
-            <ProfileImg
-                src={avatar}
-                alt="User avatar"
-                className="avatar"
-            />
-            <ProfileName>{username}</ProfileName>
-            <ProfileTag>@{tag}</ProfileTag>
-            <ProfileLocation>{location}</ProfileLocation>
-        </ProfileDescription>
-        <ProfileStats followers={stats.followers} views={stats.views} likes={stats.likes}/>
-        <Statistics title="Upload stats" stats={statistics} />
-    </Profile>;
+            <ProfileDescription>
+                <ProfileImg
+                    src={avatar}
+                    alt="User avatar"
+                    className="avatar"
+                />
+                <ProfileName>{username}</ProfileName>
+                <ProfileTag>@{tag}</ProfileTag>
+                <ProfileLocation>{location}</ProfileLocation>
+            </ProfileDescription>
+            <ProfileStats followers={stats.followers} views={stats.views} likes={stats.likes}/>
+        </Profile>;
 };
 
 
